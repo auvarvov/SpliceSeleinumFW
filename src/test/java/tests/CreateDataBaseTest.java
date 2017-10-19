@@ -31,7 +31,7 @@ public class CreateDataBaseTest extends MotherTest {
         frontPage.clickOnCreateClusterButton();
         createClusterPage.setInternalDatasetValueToEditField("0.1");
         createClusterPage.setOLTPSpliceUnits("4");
-        createClusterPage.setOLAPSpliceUnits("6");
+        createClusterPage.setOLAPSpliceUnits("4");
         createClusterPage.setClusterName(clustername);
         createClusterPage.clickOnNextButton();
         createClusterPage2.clickConfirrmCheckBox();
