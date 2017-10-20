@@ -9,15 +9,15 @@ public class Settings {
 
     private static Settings settings = new Settings();
 
-    public pish getCloudParameters() {
+    public CloudParameters getCloudParameters() {
         return cloudParameters;
     }
 
-    private pish cloudParameters;
+    private CloudParameters cloudParameters;
 
-    private pish fillCloudParameters() {
-        pish clusterParameters;
-        clusterParameters = new pish(
+    private CloudParameters fillCloudParameters() {
+        CloudParameters clusterParameters;
+        clusterParameters = new CloudParameters(
                 System.getProperty("username"),
                 System.getProperty("password"), System.getProperty("clustername")
         );
