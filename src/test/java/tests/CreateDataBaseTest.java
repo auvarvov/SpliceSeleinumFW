@@ -42,7 +42,7 @@ public class CreateDataBaseTest extends MotherTest {
         System.out.println("Cluster status:" + frontPage.getClusterStatusbyName(clustername));
 
 
-        Integer timeoutSeconds = 1200;
+        Integer timeoutSeconds = 1800;
         long starttime = System.currentTimeMillis();
         while (true) {
             if (frontPage.getClusterStatusbyName(clustername).equals("Active"))
