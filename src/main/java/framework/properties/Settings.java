@@ -1,9 +1,6 @@
 package framework.properties;
 
 
-import java.io.IOException;
-import java.util.Properties;
-
 /**
  * @author Andrey Zhelezny
  *         Date: 6/16/15
@@ -12,15 +9,15 @@ public class Settings {
 
     private static Settings settings = new Settings();
 
-    public CloudParameters getCloudParameters() {
+    public pish getCloudParameters() {
         return cloudParameters;
     }
 
-    private CloudParameters cloudParameters;
+    private pish cloudParameters;
 
-    private CloudParameters fillCloudParameters() {
-        CloudParameters clusterParameters;
-        clusterParameters = new CloudParameters(
+    private pish fillCloudParameters() {
+        pish clusterParameters;
+        clusterParameters = new pish(
                 System.getProperty("username"),
                 System.getProperty("password"), System.getProperty("clustername")
         );
